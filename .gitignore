@@ -1,0 +1,6 @@
+.classpath
+.project
+target
+target/generated-sources
+.settings
+.DS_Store
