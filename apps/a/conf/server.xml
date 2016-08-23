@@ -121,19 +121,13 @@
       </Realm>
 
       <Host name="localhost"  appBase="webapps"
-            unpackWARs="true" autoDeploy="true" errorReportValveClass="org.sourcecode.tomcat.common.CommonErrorReportValve">
-        <Context docBase="/home/apps/a/so.war"  sessionCookieName="S_JSESSIONID"  path=""  debug="0"  crossContext="true" sessionCookiePath="/" sessionCookieDomain=".co188.com" privileged="true" >
-         
-         <Valve className="com.orangefunction.tomcat.redissessions.RedisSessionHandlerValve" />
-         
-    	<Manager className="com.orangefunction.tomcat.redissessions.RedisSessionManager"  
-       	 	host="172.16.97.17"   
-        	port="6379"   
-        	database="2"
-        	sessionIdPrefix="s:"
-    	 />
-    	 
-         </Context>
+      	    docBase="/home/apps/a/so.war"
+            unpackWARs="true" 
+            autoDeploy="true"
+            override="true"
+            crossContext="true"
+            errorReportValveClass="org.sourcecode.tomcat.common.CommonErrorReportValve">
+      
    	
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs"
                prefix="localhost_access_log" suffix=".txt"
