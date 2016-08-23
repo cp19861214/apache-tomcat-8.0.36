@@ -121,14 +121,13 @@
       </Realm>
 
       <Host name="localhost"  appBase="webapps"
-      	    docBase="/home/apps/a/so.war"
-      	    path=""
             unpackWARs="true" 
             autoDeploy="true"
             override="true"
             crossContext="true"
             errorReportValveClass="org.sourcecode.tomcat.common.CommonErrorReportValve">
-      
+            
+      	<Context path="" docBase="/home/apps/a/so.war"  debug="0" reloadable="true" crossContext="true" >
    	
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs"
                prefix="localhost_access_log" suffix=".txt"
