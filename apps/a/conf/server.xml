@@ -122,16 +122,15 @@
 
       <Host name="localhost"  appBase="webapps"
             unpackWARs="true" autoDeploy="true" errorReportValveClass="org.sourcecode.tomcat.common.CommonErrorReportValve">
-         <Context path="" docBase="/home/apps/a/passport.war"  debug="0" reloadable="true" crossContext="true" />
-        <!-- SingleSignOn valve, share authentication between web applications
-             Documentation at: /docs/config/valve.html -->
-        <!--
-        <Valve className="org.apache.catalina.authenticator.SingleSignOn" />
-        -->
-
-        <!-- Access log processes all example.
-             Documentation at: /docs/config/valve.html
-             Note: The pattern used is equivalent to using pattern="common" -->
+         <Context docBase="/home/apps/a/so.war"  sessionCookieName="S_JSESSIONID"  path=""  debug="0"  crossContext="true" sessionCookiePath="/" sessionCookieDomain=".co188.com" privileged="true" />
+   	
+	    <Manager className="com.orangefunction.tomcat.redissessions.RedisSessionManager"  
+	        host="172.16.97.17"   
+	        port="6379"   
+	        database="2"
+	        sessionIdPrefix="s:"
+	     />
+	    <Valve className="com.orangefunction.tomcat.redissessions.RedisSessionHandlerValve" />
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs"
                prefix="localhost_access_log" suffix=".txt"
                pattern="%h %l %u %t &quot;%r&quot; %s %b" />
