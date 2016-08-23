@@ -122,6 +122,7 @@
 
       <Host name="localhost"  appBase="webapps"
       	    docBase="/home/apps/a/so.war"
+      	    path=""
             unpackWARs="true" 
             autoDeploy="true"
             override="true"
