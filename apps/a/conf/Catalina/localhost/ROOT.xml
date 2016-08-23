@@ -1,12 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
 
-<Context docBase="/home/apps/a/so.war" 
-		 sessionCookieName="S_JSESSIONID"
+<Context docBase="" 
+		 sessionCookieName="JSESSIONID"
 		 path=""  
 		 debug="0"  
 		 crossContext="true" 
 		 sessionCookiePath="/" 
-		 sessionCookieDomain=".co188.com" 
 		 privileged="true" >
 		 
     <WatchedResource>WEB-INF/web.xml</WatchedResource>
