@@ -42,16 +42,8 @@
 
   <Service name="Catalina">
 
-     <Executor
-	    	namePrefix="catalina-exec-b-"
-	    	name="tomcatThreadPool"
-	        maxThreads="800"
-	        minSpareThreads="6"
-        	/>
-
     <Connector port="8082" 
     		   protocol="org.apache.coyote.http11.Http11Nio2Protocol"
-    		   executor="tomcatThreadPool"
     		   enableLookups="false"
                connectionTimeout="20000"
                redirectPort="8443" 
