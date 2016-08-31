@@ -1,0 +1,6 @@
+*.rdb
+*.pid
+*.conf
+.DS_Store
+
+

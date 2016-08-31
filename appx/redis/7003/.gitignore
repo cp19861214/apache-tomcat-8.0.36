@@ -1,0 +1,10 @@
+.project
+.pydevproject
+.settings
+*.pyc
+*.swp
+*.bak
+.DS_Store
+src/sample/runtime
+.buildpath
+
