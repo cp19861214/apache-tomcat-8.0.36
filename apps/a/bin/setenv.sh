@@ -1,4 +1,4 @@
-CATALINA_OPTS="$JAVA_OPTS -Djava.library.path=$CATALINA_HOME/lib -Xms512m -Xmx512m -XX:MetaspaceSize=64m -XX:MaxMetaspaceSize=256m  -server"
+CATALINA_OPTS="$JAVA_OPTS -Djava.library.path=$CATALINA_HOME/lib -Xms512m -Xmx512m -XX:MetaspaceSize=64m -XX:MaxMetaspaceSize=256m  -server -XX:+PrintGCDetails -XX:+PrintGCApplicationStoppedTime -Xloggc:/home/log/tomcatagc.log"
 
 #args="-J-Xms256m -J-Xmx768m"
 
