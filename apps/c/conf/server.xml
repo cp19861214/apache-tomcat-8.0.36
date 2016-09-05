@@ -68,9 +68,6 @@
       <Host name="localhost"  appBase="webapps"
             unpackWARs="true" 
             autoDeploy="true"
-            override="true"
-            crossContext="true"
-            reloadable="false"
             errorReportValveClass="org.sourcecode.tomcat.common.CommonErrorReportValve">
  
 		 
