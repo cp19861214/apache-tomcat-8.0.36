@@ -43,6 +43,7 @@
     		   protocol="org.apache.coyote.http11.Http11Nio2Protocol"
     		   enableLookups="false"
                connectionTimeout="20000"
+               maxThreads="1000"
                redirectPort="8443" 
                URIEncoding="GBK"  
              	/>
